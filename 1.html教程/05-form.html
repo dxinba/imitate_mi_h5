@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>表单form</title>
+</head>
+
+<body>
+    <!-- 
+        <form action：上传服务器地址
+        method：提交方式
+        name：表单名称>
+        type控件类型
+        name字段名
+        value字段值
+        radio和checkbox中name一样即可实现单选/多选的
+ -->
+    <!--  -->
+    <form action="#.php" method="GET" name="">
+        <!-- value -->
+        text用户名：<input type="text" name="username" value="请输入用户名" /><br />
+        <!-- 专门输入密码的文本框 -->
+        password密码：<input type="password" name="" id="pwd" /><br />
+        <!-- 专门输入email的文本框 -->
+        email<input type="email" name="" id="" /><br />
+        <!-- 搜索（带清除按钮 -->
+        search<input type="search" name="" id=""><br />
+        url<input type="url" name="" id=""><br />
+        tel<input type="tel" name="" id=""><br />
+        number<input type="number" name="" id=""><br />
+
+        <!-- 单选框 -->
+        radio性别：
+        <label for="nan"><img src="../images/race.png" /></label>
+        <input type="radio" name="sex" value="nan" id="nan" />
+        <label for="nan">男</label>
+        <label for="nv"><img src="../images/v-logo-2.png" /></label>
+        <input type="radio" name="sex" value="nv" id="nv" /><label for="nv">女</label><br />
+        <!-- 多选框 -->
+        checkbox兴趣：<input type="checkbox" name="habby" value="chifan" />吃饭
+        <input type="checkbox" name="habby" value="shuijiao" checked="checked" />睡觉<br />
+
+        <!-- 颜色选择器 -->
+        color<input type="color" name="" id="color" value="#333" /><br />
+        <!-- 年月日选择器 -->
+        date<input type="date" name="" id="" /><br />
+        <!--  -->
+        datetime<input type="datetime" name="datetime" id="" /><br />
+        <!-- 年月日时分秒选择器 -->
+        datetime-local<input type="datetime-local" name="" id=""><br />
+        <!-- 年月选择器 -->
+        month<input type="month" name="" id="" /><br />
+        <!-- 某年第X周选择器 -->
+        week<input type="week" name="" id=""><br />
+
+        <!--  -->
+        range<input type="range" name="" id=""><br />
+
+        <!-- 图片 -->
+        image<input type="image" /><br />
+        <!-- 选取文件 -->
+        file<input type="file" name="file" /><br />
+        <!-- 未知 -->
+        hidden<input type="hidden" name="你好呀" /><br />
+
+        <br /><br />
+        <!-- 普通按钮和js搭配 -->
+        button<input type="button" value="按钮" /><br />
+        <!-- 提交表单 -->
+        submit<input type="submit" value="提交" />
+        <!-- 清除表单 -->
+        reset<input type="reset" value="清除" /><br />
+
+
+        <select name="" id="">
+            <option value="">1</option>
+            <option value="">2</option>
+            <option value="">3</option>
+            <option value="" selected="selected">4</option>
+        </select><br />
+
+        <textarea name="" id="" cols="30" rows="10">啦啦啦</textarea>
+    </form>
+</body>
+
+</html>

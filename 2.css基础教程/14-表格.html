@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表格table</title>
+    <style>
+        /* border 表格边框（参考边框） */
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+
+        /* width height 表格宽度和高度 */
+        table {
+            /* 全宽表格 */
+            width: 100%;
+        }
+
+        /* 单元格高度 */
+        th {
+            height: 50px;
+        }
+
+        /* border-collapse 合并表格边框 */
+        /* 将表格边框折叠为单一边框 */
+        table {
+            border-collapse: collapse;
+        }
+
+        /* 如果只希望表格周围有边框，则仅需为 <table> 指定 border 属性 */
+        table {
+            border: 1px solid black;
+        }
+
+        /* 对齐 */
+        /* text-align 水平对齐 left、center、right */
+        /* vertical-align 垂直对齐 top、center、bottom */
+        th {
+            text-align: left;
+            height: 50px;
+            vertical-align: bottom;
+        }
+
+        /* td、th padding 表格内边距 */
+        th,
+        td {
+            padding: 15px;
+            text-align: left;
+        }
+
+        /* border-bottom 水平分隔线 */
+        ˜ th,
+        td {
+            border-bottom: 1px solid #ddd;
+        }
+
+        /* tr:hover 选择器，可悬停表格高亮显示 */
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+
+        /* nth-child() 条状表格 */
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        /* 表格颜色 */
+        /* 指定了 <th>（td也可） 元素的背景颜色和文本颜色 */
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+
+        /* 向包裹table的容器添加 style="overflow-x:auto" 响应式表格 */
+    </style>
+</head>
+
+<body>
+    <h1>Let the borders collapse</h1>
+
+    <table>
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+        </tr>
+        <tr>
+            <td>Bill</td>
+            <td>Gates</td>
+        </tr>
+        <tr>
+            <td>Steve</td>
+            <td>Jobs</td>
+        </tr>
+        <tr>
+            <td>Bill</td>
+            <td>Gates</td>
+        </tr>
+        <tr>
+            <td>Steve</td>
+            <td>Jobs</td>
+        </tr>
+    </table>
+
+</body>
+
+</html>

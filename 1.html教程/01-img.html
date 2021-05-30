@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图片img</title>
+</head>
+
+<body>
+
+    <!-- 给图片设置宽度、高度 -->
+    <img src="../images/banner1.jpeg" alt="没有图片" srcset="" width="500" height="300">
+    <img src="../images/banner1.jpeg" alt="" title="你好朋友" srcset="" width="500">
+    <img src="../images/banner1.jpeg" alt="" title="你好朋友">
+    <!-- 必须的属性：
+        alt text 图像替代文本
+        src URL 图像的url 
+                        上级目录../ 同级目录（直接写） 下级目录/
+                        https://XXX
+     -->
+
+    <!-- 可选：
+        srcset 根据浏览器宽、高、像素密度来加载相应的图片资源
+        属性格式：图片地址 宽度描述w 像素密度描述x，多个资源之间用逗号分隔。
+        <img src="small.jpg " srcset="big.jpg 1440w, middle.jpg 800w, small.jpg 1x" />表示浏览器宽度达到 800px 则加载 middle.jpg ，达到 1400px 则加载 big.jpg。注意：像素密度描述只对固定宽度图片有效。
+
+        height pixels 高度
+        width pixels 宽度
+
+        ismap url 将图像定义为服务器端图像映射。
+        longdesc url 指向包含长的图像描述文档的url
+        usemap url 将图像定义为客户端图像映射
+
+        align
+        border
+        hspace
+        vspace
+     -->
+
+
+
+    <!-- img srcset 属性
+
+img 元素的 srcset 属性用于浏览器根据宽、高和像素密度来加载相应的图片资源。
+
+属性格式：图片地址 宽度描述w 像素密度描述x，多个资源之间用逗号分隔。例如：
+
+<img src="small.jpg " srcset="big.jpg 1440w, middle.jpg 800w, small.jpg 1x" />
+Select CodeCopy
+上面的例子表示浏览器宽度达到 800px 则加载 middle.jpg ，达到 1400px 则加载 big.jpg。注意：像素密度描述只对固定宽度图片有效。
+
+img 元素的 size 属性给浏览器提供一个预估的图片显示宽度。
+
+属性格式：媒体查询 宽度描述（支持px），多条规则用逗号分隔。
+
+<img src="images/gun.png" alt="img元素srcset属性浅析"
+         srcset="images/bg_star.jpg 1200w, images/share.jpg 800w, images/gun.png 320w"
+         sizes="(max-width: 320px) 300w, 1200w"/>
+Select CodeCopy
+上面的例子表示浏览器视口为 320px 时图片宽度为 300px，其他情况为 1200px。
+
+css image-set()
+
+css属性image-set()支持根据用户分辨率适配图像。
+
+body {
+    background-image: -webkit-image-set( url(../images/pic-1.jpg) 1x, url(../images/pic-2.jpg) 2x, url(../images/pic-3.jpg) 600dpi);
+    background-image:         image-set( url(../images/pic-1.jpg) 1x, url(../images/pic-2.jpg) 2x, url(../images/pic-3.jpg) 600dpi);
+}
+Select CodeCopy
+上述代码将会为普通屏幕使用 pic-1.jpg，为高分屏使用 pic-2.jpg，如果更高的分辨率则使用 pic-3.jpg，比如印刷。 -->
+</body>
+
+</html>

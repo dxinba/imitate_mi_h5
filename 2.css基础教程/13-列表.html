@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>列表ul、ol、dl</title>
+    <style>
+        body {
+            background-color: orange;
+        }
+
+        /* 
+        为有序列表设置不同的列表项标记
+        为无序列表设置不同的列表项标记
+        将图像设置为列表项标记
+        为列表和列表项添加背景色 */
+        /* list-style 简写 */
+        /* 顺序为： */
+        /* list-style-type（如果指定了 list-style-image，那么在由于某种原因而无法显示图像时，会显示这个属性的值）
+           list-style-position（指定列表项标记应显示在内容流的内部还是外部）
+           list-style-image（将图像指定为列表项标记） */
+        ul {
+            list-style: square inside url("sqpurple.gif");
+        }
+
+        /* list-style-type 内置项目标记 */
+        ul.a {
+            list-style-type: circle;
+        }
+
+        ul.b {
+            list-style-type: square;
+        }
+
+        ol.c {
+            list-style-type: upper-roman;
+        }
+
+        ol.d {
+            list-style-type: lower-alpha;
+        }
+
+        /* 注释：有些值用于无序列表，而有些值用于有序列表。 */
+
+        /* list-style-image 图像作为列表项标记 */
+        ul.e {
+            list-style-image: url('../images/qiye.png');
+        }
+
+        /* list-style-position 定位列表项标记 */
+        ul.a {
+            /* 默认 */
+            list-style-position: outside;
+        }
+
+        ul.b {
+            list-style-position: inside;
+        }
+
+        /* 删除默认配置 */
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* 设置列表的颜色样式 */
+        ol {
+            background: #ff9999;
+            padding: 20px;
+        }
+
+        ul {
+            background: #3399ff;
+            padding: 20px;
+        }
+
+        ol li {
+            background: #ffe5e5;
+            padding: 5px;
+            margin-left: 35px;
+        }
+
+        ul li {
+            background: #cce5ff;
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>列表</h1>
+    <p>无序列表实例：</p>
+
+    <ul class="a e">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ul>
+
+    <ul class="b e">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ul>
+
+    <p>有序列表实例：</p>
+    <ol class="c">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ol>
+
+    <ol class="d">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ol>
+</body>
+
+</html>

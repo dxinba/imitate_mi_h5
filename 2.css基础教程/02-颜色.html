@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>颜色</title>
+    <style>
+        body{
+            text-align: center;
+            color: silver;
+        }
+        .rgbcolor {
+            color: rgb(255, 99, 71);
+        }
+
+        .rgbacolor {
+            color: rgba(255, 99, 71, 0.5);
+        }
+        .hexcolor{
+            color: #ff6347;
+        }
+        .hslcolor {
+            color:hsl(9, 100%, 64%);
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>都是同一种颜色的不同颜色格式</h1>
+    <h1 class="rgbcolor">rgbColor</h1>
+<h1 class="rgbacolor">rgbaColor</h1>
+<h1 class="hexcolor">行内hexcolor</h1>
+<h1 class="hslcolor">行内hslcolor</h1>
+
+<h1 style="background-color:#ff6347;">...行内hexcolor...</h1>
+<h1 style="background-color:hsl(9, 100%, 64%);">...行内hslcolor...</h1>
+</body>
+
+</html>

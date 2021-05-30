@@ -12,35 +12,48 @@
             background-color: #333;
             margin: -10px -30px;
         }
-        
+
         .nav-div {
             width: 1000px;
             height: 40px;
             margin: 0 auto;
         }
-        
-        .nav-span {
+
+        .nav-span-l {
             float: left;
             height: 40px;
             padding: 0 20px;
             color: #b0b0b0;
-            font-size: 8;
+            font-weight: 400;
         }
-        
-        .nav-span a {
+
+        .nav-span-r {
+            float: right;
+            height: 40px;
+            padding: 0 20px;
+            color: #b0b0b0;
+        }
+
+        .nav-span-l a,
+        .nav-span-r a {
             font-size: 14;
             color: #b0b0b0;
         }
-        
+
         .nav-sep {
             float: left;
             color: #b0b0b0;
         }
-        
+
+        .nav-sep-r {
+            float: right;
+            color: #b0b0b0;
+        }
+
         .nav-span a:hover {
             color: #fff;
         }
-        
+
         .categories-banner {
             float: left;
             width: 1200px;
@@ -48,7 +61,7 @@
             background-color: #357;
             margin: 0 auto;
         }
-        
+
         .categories {
             float: left;
             width: 200px;
@@ -56,18 +69,31 @@
             color: #fff;
             background-color: #345345B5;
         }
-        
+
+        .categories a {
+            color: #b0b0b0;
+        }
+
+        .categories li {
+            height: 40px;
+            padding: 0 auto;
+        }
+
+        .categories a:hover {
+            color: #fff;
+        }
+
         .banner {
             float: left;
             width: 1000px;
             height: 400px;
             background-color: #666;
         }
-        
+
         li {
             list-style-type: none;
         }
-        
+
         a {
             text-decoration: none;
         }
@@ -77,49 +103,41 @@
 <body>
     <div class="nav">
         <div class="nav-div">
-            <span class="nav-span"><a href="#">小米商城</a> </span>
+            <span class="nav-span-l"><a href="#">小米商城</a> </span>
             <span class="nav-sep">|</span>
-            <span class="nav-span"><a href="#">MIUI</a> </span>
+            <span class="nav-span-l"><a href="#">MIUI</a> </span>
             <span class="nav-sep">|</span>
-            <span class="nav-span"><a href="#">LoT</a> </span>
+            <span class="nav-span-l"><a href="#">LoT</a> </span>
             <span class="nav-sep">|</span>
-            <span class="nav-span"><a href="#">云服务</a> </span>
+            <span class="nav-span-l"><a href="#">云服务</a> </span>
             <span class="nav-sep">|</span>
-            <span class="nav-span"><a href="#">天星数科</a> </span></div>
+            <span class="nav-span-l"><a href="#">天星数科</a> </span>
+
+            <span class="nav-span-r"><a href="#">我的</a> </span>
+            <span class="nav-sep-r">|</span>
+            <span class="nav-span-r"><a href="#">消息</a> </span>
+        </div>
     </div>
 
     <div class="nav-sec">
 
     </div>
     <div class="categories-banner">
+
+        <div><img src="../images/banner1.jpeg" alt="" srcset="" width="1200"></div>
         <div class="categories">
             <ul>
-                <li>
-                    <a href="">手机 电话卡</a>
-                    <a href="">电视 盒子</a>
-                    <a href="">笔记本 显示器</a>
-                    <a href="">家电 插线板</a>
-                    <a href="">出行 穿戴</a>
-                    <a href="">智能 路由器</a>
-                    <a href="">电源配件</a>
-                    <a href="">健康 儿童</a>
-                    <a href="">耳机 音箱</a>
-                    <a href="">生活 箱包</a>
-                </li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li><a href="#">手机 电话卡</a></li>
+                <li><a href="#">电视 盒子</a></li>
+                <li><a href="#">笔记本 显示器</a></li>
+                <li><a href="#">家电 插线板</a></li>
+                <li><a href="##">出行 穿戴</a></li>
+                <li><a href="#">智能 路由器</a></li>
+                <li><a href="#">电源配件</a></li>
+                <li><a href="#">健康 儿童</a></li>
+                <li><a href="#">耳机 音箱</a></li>
+                <li><a href="#">生活 箱包</a> </li>
             </ul>
-        </div>
-        <div class="banner">
-
         </div>
     </div>
 </body>

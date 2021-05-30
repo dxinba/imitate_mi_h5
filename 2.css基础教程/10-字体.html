@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>字体font</title>
+
+    <style>
+        /* 字体
+通用字体族：
+衬线字体（Serif）- 在每个字母的边缘都有一个小的笔触。它们营造出一种形式感和优雅感。
+无衬线字体（Sans-serif）- 字体线条简洁（没有小笔画）。它们营造出现代而简约的外观。
+等宽字体（Monospace）- 这里所有字母都有相同的固定宽度。它们创造出机械式的外观。
+草书字体（Cursive）- 模仿了人类的笔迹。
+幻想字体（Fantasy）- 是装饰性/俏皮的字体。
+提示：在计算机屏幕上，无衬线字体被认为比衬线字体更易于阅读。
+ */
+
+
+        /* font 字体简写 */
+        p.a {
+            /* font-style font-variant font-weight font-size（必须）/line-height font-family（必须） */
+            font: italic small-caps bold 12px/30px Georgia, serif;
+        }
+
+
+        /* font-family 字体族 */
+        .p1 {
+            /* 按顺序查找并使用浏览器支持的字体，如果都没有则使用默认字体 */
+            font-family: "Times New Roman", Times, serif;
+        }
+
+
+        /* font-style 字体样式 */
+        p.normal {
+            /* 正常显示 */
+            font-style: normal;
+        }
+
+        p.italic {
+            /* 斜体显示 */
+            font-style: italic;
+        }
+
+        p.oblique {
+            /* 文本为“倾斜”（倾斜与斜体非常相似，但支持较少） */
+            font-style: oblique;
+        }
+
+        /* font-weight 字体粗细 */
+        p.normal {
+            font-weight: normal;
+        }
+
+        p.thick {
+            font-weight: bold;
+        }
+
+        /* font-variant 字体变体 */
+        /* 正常 */
+        p.normal {
+            font-variant: normal;
+        }
+
+        /* 所有小写字母都将转换为大写字母，转换后的大写字母的字体大小小于文本中原始大写字母的字体大小。 */
+        p.small {
+            font-variant: small-caps;
+        }
+
+
+        /* font-size 字体大小 */
+        /* 默认值：16px（1em） */
+        h1 {
+            font-size: 40px;
+        }
+
+        /* W3C 建议使用 em 尺寸单位。 */
+        /* 旧版本的 Internet Explorer 仍然存在问题 */
+        h1 {
+            font-size: 2.5em;
+            /* 40px/16=2.5em */
+        }
+
+        /* 使用百分比和 Em 的组合 */
+        body {
+            font-size: 100%;
+        }
+
+        h1 {
+            font-size: 2.5em;
+        }
+
+        h2 {
+            font-size: 1.875em;
+        }
+
+        p {
+            font-size: 0.875em;
+        }
+
+        /* 响应式字体大小，使用单位：vw（视口宽度vw：viewport width），文本大小将遵循浏览器窗口的大小 */
+        h1 {
+            font-size: 10vw;
+            /* 40px/16=2.5em */
+        }
+    </style>
+</head>
+
+<body>
+    <p class="p1">通用字体族：
+        衬线字体（Serif）- 在每个字母的边缘都有一个小的笔触。它们营造出一种形式感和优雅感。
+        无衬线字体（Sans-serif）- 字体线条简洁（没有小笔画）。它们营造出现代而简约的外观。
+        等宽字体（Monospace）- 这里所有字母都有相同的固定宽度。它们创造出机械式的外观。
+        草书字体（Cursive）- 模仿了人类的笔迹。
+        幻想字体（Fantasy）- 是装饰性/俏皮的字体。
+        提示：在计算机屏幕上，无衬线字体被认为比衬线字体更易于阅读。</p>
+
+
+
+    <h1>字体变体</h1>
+
+    <p class="normal">My name is Bill Gates.</p>
+    <p class="small">My name is Bill Gates.</p>
+</body>
+
+</html>

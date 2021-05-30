@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css的位置</title>
+
+    <!-- 内部css -->
+    <style>
+        .sec {
+            color: cornflowerblue;
+            text-align: left;
+        }
+
+
+        /* 简单选择器 */
+        /* 通用选择器 */
+        * {
+            color: darkgreen;
+        }
+
+        /* 元素选择器 */
+        h2 {
+            color: darkkhaki;
+            text-align: center;
+        }
+
+        /* id选择器 
+            当有第二个元素使用id=para1时，IDE会提示#para1必须是唯一的
+        */
+        #para1 {
+            color: red;
+        }
+
+        /* 类选择器1 */
+        .center {
+            color: yellow;
+        }
+
+        /* 类选择器2
+        仅在h2的便签中使用class="center"，则下面和.center这两个选择器的内容都会生效 */
+        h2.center {
+            text-align: right;
+        }
+
+         /* 分组选择器 */
+         h3, h4, p {
+             color: blue;
+             text-align: center;
+         }
+    </style>
+
+    <!-- 外部css -->
+    <link rel="stylesheet" href="01-css.css">
+
+</head>
+
+<body>
+    {
+    <h1>选择器</h1>
+    <h2>元素选择器，针对h2元素</h2>
+    <h2 id="para1">id选择器t1</h2>
+    <h3 class="center">类选择器1</h3>
+    <h2 class="center">类选择器2</h2>
+
+
+    <h3>分组选择器中的h3</h3>
+    <h4>分组选择器中的h4</h4>
+    <p>分组选择器中的p</p>
+    }
+    <br>
+    {
+    <!-- 内部css -->
+    <h1 class="sec">亲爱的朋友 内部</h1>
+
+    <!-- 外部css使用 -->
+    <h1 class="nav">你好啊 外部</h1>
+
+    <!-- 行内css -->
+    <h1 style="color: chartreuse; text-align: right;">今天天气不错呢 行内</h1>
+
+    <!-- 优先级
+    行内>内部>外部>浏览器默认样式
+    -->
+    <!-- 内部css -->
+    <h1 class="sec">单使用内部</h1>
+
+    <!-- 外部css使用 -->
+    <h1 class="nav, sec">使用内部和外部</h1>
+
+    <!-- 行内css -->
+    <h1 style="color: chartreuse; text-align: right;" class="sec">使用内部和行内</h1>
+
+    }
+
+</body>
+
+</html>

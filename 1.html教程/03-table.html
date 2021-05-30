@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>表格table</title>
+    <style>
+        .blue-td {
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <table align="center" width="500" height="300" border="1" cellspacing="0">
+        <thead>
+            <tr>
+                <th>排名</th>
+                <th>关键词</th>
+                <th>趋势</th>
+                <th>今日搜索</th>
+                <th>最近七日</th>
+                <th>相关链接</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>鬼吹灯</td>
+                <td class="blue-td"><img src="../images/fcode.png" /></td>
+                <td>456</td>
+                <td>123</td>
+                <td>
+                    <a href="#">贴吧</a> <a href="#">图片</a> <a href="#">百科</a>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="6"></td>
+            </tr>
+            <tr>
+                <td>合并单元格</td>
+                <td rowspan="2">鬼吹灯</td>
+                <td colspan="2">456</td>
+                <td>123</td>
+                <td>
+                    <a href="#">贴吧</a> <a href="#">图片</a> <a href="#">百科</a>
+                </td>
+            </tr>
+            <tr>
+                <td>合并单元格</td>
+                <td>鬼吹灯</td>
+                <td class="blue-td"><img src="../images/fcode.png" /></td>
+                <td>456</td>
+                <td>
+                    <a href="#">贴吧</a> <a href="#">图片</a> <a href="#">百科</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- 
+        table
+            thead
+                tr
+                    th  th  th
+            tbody
+                tr
+                    td  td  td
+                tr
+                    td  td  td
+     -->
+</body>
+
+</html>

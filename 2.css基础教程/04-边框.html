@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>边框</title>
+
+    <style>
+        p {
+            /* 简写边框属性
+                顺序：宽度 样式（必须） 颜色
+            */
+            border: 1px double lightblue;
+            border-top: 1px dotted red;
+            border-right: 1px dotted red;
+            border-bottom: 1px dotted red;
+            border-left: 1px dotted red;
+
+
+            /* 边框样式 border-style */
+            border-style: double;
+            /* 四条边的边框宽度 border-width
+            单位 px、pt、cm、em 或 thin、medium、thick：
+            *1：border-width: 10px;（指四条边都为10px
+            *2：border-width:5px 10px;（上下为5，左右为10
+            *3：border-width:5px 10px 15px 20px;（上5，右10，下15，左20
+            */
+            border-width: 10px;
+
+
+            /* 边框颜色 */
+            /* 统一四条边为改色 */
+            border-color: lightcoral;
+            /* 设置边框颜色，和边框宽度类似 */
+            border-color: red green blue yellow;
+            border-color: red yellow;
+            /* border-color: red yellow; */
+
+            border-top-style: dotted;
+            border-right-style: solid;
+            border-bottom-style: dotted;
+            border-left-style: solid;
+            border-style: dotted dashed solid double;
+            border-style: dotted dashed solid;
+            border-style: dotted dashed;
+
+
+            border-top-color: teal;
+            border-right-color: teal;
+            border-bottom-color: teal;
+            border-left-color: teal;
+
+            border-top-width: 1px;
+            border-right-width: 1px;
+            border-bottom-width: 1px;
+            border-left-width: 1px;
+
+            /* 圆角 */
+            border: 2px double lightblue;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <p>八月的H市，已进入高温炙烤模式。夜，却未因此而平静。晚上十点，市区最大商场的 主体部分已经打烊，人们陆续从商场大门走出。
+        与此同时，另一批“意犹未尽”的顾客走进了 地下一层和地下二层东侧的“21街区”。这片主营餐饮的区域，营业时间一直会延长到凌晨两 点，是名副其实的“深夜食堂”。
+        人们在炸糕店前排队买着炸糕、在奶茶店外挑选着饮料、手 捧着冰淇淋和炸鸡……街区内无论面条米饭、饺子煎包，中餐西餐种类都很丰富。</p>
+    <p style="border-style: double;">dotted - 定义点线边框</p>
+    <p style="border-style: dashed;">dashed - 定义虚线边框</p>
+    <p style="border-style: solid;">solid - 定义实线边框</p>
+    <p style="border-style: double;">double - 定义双边框</p>
+    <p style="border-style: groove;">groove - 定义 3D 坡口边框。效果取决于 border-color 值</p>
+    <p style="border-style: ridge;">ridge - 定义 3D 脊线边框。效果取决于 border-color 值</p>
+    <p style="border-style: inset;">inset - 定义 3D inset 边框。效果取决于 border-color 值</p>
+    <p style="border-style: outset;">outset - 定义 3D outset 边框。效果取决于 border-color 值</p>
+    <p style="border-style: none;">none - 定义无边框</p>
+    <p style="border-style: hidden;">hidden - 定义隐藏边框</p>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

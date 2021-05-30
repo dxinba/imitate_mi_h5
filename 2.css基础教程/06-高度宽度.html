@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>高度/宽度</title>
+
+    <style>
+        /* 取值/单位
+        auto - 默认。浏览器计算高度和宽度。
+        length - 以 px、cm 等定义高度/宽度。
+        % - 以包含块的百分比定义高度/宽度。
+        initial - 将高度/宽度设置为默认值。
+        inherit - 从其父值继承高度/宽度。
+         */
+        /* 不包括内边距、边框或外边距 */
+        /* 除去内边距、边框或外边距之后区域内的高度/宽度 */
+        div {
+            height: 10px;
+            width: 20px;
+
+            /* 浏览器显示最大高度/宽度 */
+            max-height: 500px;
+            max-width: 400px;
+
+            /* 浏览器显示最小高度/宽度 */
+            min-height: 500px;
+            min-width: 400px;
+
+            background-color: chartreuse;
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>

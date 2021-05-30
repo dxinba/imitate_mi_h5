@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>边距</title>
+    <style>
+        /* 外边距 */
+        .margin {
+            /* margin简写 
+            auto 浏览器来计算外边距
+            1px / 1pt / 1cm 等单位指定外边距
+            % 指定包含元素宽度的百分比计的外边距
+            inherit 指定应从父元素继承外边距
+            /// 允许负值
+            */
+            margin: auto;
+            /* 全部10px */
+            margin: 10px;
+            /* 上下10px 左右20px */
+            margin: 10px 20px;
+            /* 上 右左 下 */
+            margin: 10px 20px 30px;
+            /* 上右下左 */
+            margin: 10px 20px 30px 40px;
+            /* 单独的边 */
+            margin-top: 10px;
+            margin-right: auto;
+            margin-bottom: auto;
+            margin-left: auto;
+
+        }
+
+        /* inherit */
+        div {
+            border: 1px solid red;
+            margin-left: 100px;
+        }
+
+        p.ex1 {
+            margin-left: inherit;
+        }
+
+        /* 外边距合并 https://www.w3school.com.cn/css/css_margin_collapse.asp */
+        /* 注释：只有普通文档流中块框的垂直外边距才会发生外边距合并。行内框、浮动框或绝对定位之间的外边距不会合并。 */
+
+        /* 垂直合并 */
+        * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+
+        #d1 {
+            width: 100px;
+            height: 100px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            background-color: red;
+        }
+
+        #d2 {
+            width: 100px;
+            height: 100px;
+            margin-top: 10px;
+            /* 虽然有10px的边距，但是会上移。被包含在d1中20px中的下10px */
+            background-color: blue;
+        }
+
+        /* 包含合并 */
+        /* 自身合并 */
+
+
+
+
+        /* 内边距
+        单位：
+        1px / 1pt / 1cm 等单位指定外边距
+        % 指定包含元素宽度的百分比计的外边距
+        inherit 指定应从父元素继承外边距
+         */
+        /* 子控件据父控件的距离 */
+        div {
+            /* 上右下左 */
+            padding: 25px 50px 75px 100px;
+            /* 上 右左 下 */
+            padding: 25px 50px 75px;
+            /* 上下 右左 */
+            padding: 25px 50px;
+            /* 四条边 */
+            padding: 25px;
+        }
+
+        /* padding可能会造成容器变大（即默认 box-sizing: content-box;），
+        更边使用box-sizing: border-box; */
+    </style>
+</head>
+
+<body>
+    <h1>使用继承值</h1>
+    <p>左外边距继承自父元素：</p>
+
+    <div>
+        <p class="ex1">本段落继承了 div 元素的左外边距。</p>
+    </div>
+
+    <div id="d1"></div>
+
+    <div id="d2"></div>
+
+
+</body>
+
+</html>

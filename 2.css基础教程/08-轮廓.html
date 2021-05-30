@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>轮廓outline</title>
+    <style>
+        /* 轮廓 处于边框外，不计算尺寸，可能与其他内容重叠 */
+        /* 注意：除非设置了 outline-style 属性，否则其他轮廓属性都不会有任何作用！ */
+        p.dotted {
+            outline-style: dotted;
+        }
+
+        p.dashed {
+            outline-style: dashed;
+        }
+
+        p.solid {
+            outline-style: solid;
+        }
+
+        p.double {
+            outline-style: double;
+        }
+
+        p.groove {
+            outline-style: groove;
+        }
+
+        p.ridge {
+            outline-style: ridge;
+        }
+
+        p.inset {
+            outline-style: inset;
+        }
+
+        p.outset {
+            outline-style: outset;
+        }
+
+        p {
+            outline-color: red;
+        }
+
+        /* outline-width 轮廓宽度 */
+        /* 单位
+        thin（通常为 1px）
+        medium（通常为 3px）
+        thick （通常为 5px）
+        特定尺寸（以 px、pt、cm、em 计）  */
+
+        /* outline-color 轮廓颜色 */
+        /* 单位
+        name - 指定颜色名，比如 "red"
+        HEX - 指定十六进制值，比如 "#ff0000"
+        RGB - 指定 RGB 值，比如 "rgb(255,0,0)"
+        HSL - 指定 HSL 值，比如 "hsl(0, 100%, 50%)"
+        invert - 执行颜色反转（确保轮廓可见，无论是什么颜色背景）
+         */
+
+        /* 轮廓简写
+         outline-style（必需）
+         outline-width
+         outline-color
+        顺序不重要
+          */
+        p {
+            outline: thick dashed red;
+            outline-color: red;
+            outline-width: thin;
+        }
+
+        /* 轮廓偏移
+          边框与轮廓中间添加透明色的空间
+           */
+        p {
+            outline: thick dashed red;
+            outline-offset: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="dotted">点状轮廓</p>
+    <p class="dashed">虚线轮廓</p>
+    <p class="solid">实线轮廓</p>
+    <p class="double">双线轮廓</p>
+    <p class="groove">凹槽轮廓。效果取决于 outline-color 值。</p>
+    <p class="ridge">凸脊轮廓。效果取决于 outline-color 值。</p>
+    <p class="inset">凹边轮廓。效果取决于 outline-color 值。</p>
+    <p class="outset">凸边轮廓。效果取决于 outline-color 值。</p>
+</body>
+
+</html>
